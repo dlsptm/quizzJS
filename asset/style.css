@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f2f6;
+  color: rgb(2, 10, 52);
+  max-height: 100vh;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+h1 {
+  margin: 100px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.answerchoices {
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+  accent-color: rgb(41, 10, 143)
+}
+
+
+h2 {
+  font-size: 1.8rem;
+  margin: 50px 0;
+}
+
+button, p {
+  text-align: left;
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid rgb(6, 9, 58);
+  background: transparent;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+button:hover, p:hover {
+  outline: 1px solid rgb(8, 30, 136);
+}
+
+.goodAnswer {
+  background: rgb(13, 152, 66);
+}
+
+.badAnswer {
+  background: rgb(152, 13, 13);
+}
+
+.hidden {
+  position: absolute;
+  z-index: -2;
+  height: 100vh;
+  width: 100%;
+  background: #f0f2f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+h3 {
+  font-size: 5rem;
+  margin: 50px;
+}
+
+
+
+.finalWindow {
+  z-index: 2;
+  opacity: 1;
+}
+
